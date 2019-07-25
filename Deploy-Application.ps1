@@ -181,7 +181,8 @@ Try {
 		}
 
 		# <Perform Uninstallation tasks here>
-
+		$exitCode = Remove-MSIApplications -Name "GlobalProtect" -PassThru
+		If (($exitCode.ExitCode -ne "0") -and ($mainExitCode -ne "3010")) { $mainExitCode = $exitCode.ExitCode }
 
 		##*===============================================
 		##* POST-UNINSTALLATION
