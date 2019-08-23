@@ -65,13 +65,13 @@ Try {
 	## Variables: Application
 	[string]$appVendor = 'Palo Alto Networks'
 	[string]$appName = 'GlobalProtect'
-	[string]$appVersion = '4.1.10'
+	[string]$appVersion = '4.1.12'
 	[string]$appArch = 'x64'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '3.7.0.1'
-	[string]$appScriptDate = '07/25/2019'
-	[string]$appScriptAuthor = 'Steve Patterson'
+	[string]$appScriptDate = '08/23/2019'
+	[string]$appScriptAuthor = 'Steve Patterson, Truong Nguyen'
 	##*===============================================
 	## Variables: Install Titles (Only set here to override defaults set by the toolkit)
 	[string]$installName = ''
