@@ -139,7 +139,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-MSI -Action 'Install' -Path "$dirFiles\GlobalProtect64.msi" -Parameters '/quiet PORTAL="secure.msudenver.edu"'
+		Execute-MSI -Action 'Install' -Path "$dirFiles\GlobalProtect64.msi" -Parameters '/quiet PORTAL="secureaccess.msudenver.edu"'
 
 		##*===============================================
 		##* POST-INSTALLATION
