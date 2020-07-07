@@ -68,7 +68,7 @@ Try {
 	[string]$appVendor = 'Palo Alto Networks'
 	[string]$appName = 'GlobalProtect'
 	[string]$appVersion = '5.1.4'
-	[string]$appArch = x64''
+	[string]$appArch = 'x64'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
 	[string]$appScriptVersion = '1.0.0'
@@ -127,7 +127,7 @@ Try {
 		Show-InstallationProgress
 
 		## <Perform Pre-Installation tasks here>
-
+		Remove-MSIApplications -Name "GlobalProtect" -PassThru
 
 		##*===============================================
 		##* INSTALLATION
